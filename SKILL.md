@@ -1,3 +1,8 @@
+---
+name: gardener
+description: A CLI that takes a keyword, searches BT torrent indexes, and ranks results by **verified** swarm health (peers that actually handshake and have all pieces). Use this when the user wants to find a torrent that will actually download — site-reported seeder counts are unreliable, gardener probes the swarm itself.
+---
+
 # gardener — agent usage guide
 
 A CLI that takes a keyword, searches BT torrent indexes, and ranks results by
