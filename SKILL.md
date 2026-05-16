@@ -1,7 +1,12 @@
+---
+name: gardener
+description: Search BT torrent indexes and rank results by verified swarm health (peers that handshake and have all pieces), not site-reported seeder counts. Use when the user wants to find a torrent, get a magnet link, verify a swarm is alive, or asks to search BT for media or software.
+compatibility: Requires the gardener CLI (go install github.com/joway/gardener/cmd/gardener@latest). Outbound HTTPS, UDP for DHT, and TCP to peers; sandboxes that block UDP produce degraded results.
+---
+
 # gardener — agent usage guide
 
-A CLI that takes a keyword, searches BT torrent indexes, and ranks results by
-**verified** swarm health (peers that actually handshake and have all pieces).
+A CLI that takes a keyword, searches BT torrent indexes, and ranks results by **verified** swarm health (peers that actually handshake and have all pieces).
 Use this when the user wants to find a torrent that will actually download —
 site-reported seeder counts are unreliable, gardener probes the swarm itself.
 
